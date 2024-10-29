@@ -178,3 +178,44 @@ shutdown now
 ```
 
 And we can now remove the USB drive from our PC.
+
+## Install GUI (KDE plasma)
+
+Open the PC again and login to the system. First reconnect to wifi using `nmcli`.
+
+```bash
+nmcli dev status
+nmcli radio wifi on
+nmcli dev wifi list # List all Wi-Fi
+
+# Replace <SSID> and <PASSWORD> with the Wi-Fi name and password
+sudo nmcli dev wifi connect <SSID> password <PASSWORD> 
+```
+
+Install necessary packages as usual:
+
+```bash
+sudo pacman -Syu
+sudo pacman -S xorg sddm plasma-meta plasma-workspace dolphin konsole kwrite firefox clang cmake
+    make gcc flatpak noto-fonts noto-fonts-cjk noto-fonts-emoji libreoffice-fresh
+```
+
+After installation, we can start the GUI session.
+
+```bash
+sudo systemctl enable sddm
+sudo systemctl start sddm
+```
+
+## Add Windows entry to Grub
+
+```bash
+sudo pacman -Sy os-prober
+
+sudo vim /etc/default/grub # Edit grub config
+
+GRUB_TIMEOUT=20 # Change timeout
+GRUB_DISABLE_OS_PROBER=false # Uncomment this
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg # Generate config file
+```
