@@ -2,8 +2,18 @@
 
 I'm writing this just in case I forgot how to install arch.
 
-First, plug in the USB which has an Arch `.iso` image on it,
-then boot the computer from the USB.
+## From Windows to Arch
+
+Go to disk management and shrink space for arch to install.
+
+Download arch `.iso` image then use rufus to burn the image to an USB.
+
+Create a system restore point just in case.
+
+Before entering BIOS, make sure device encryption and bit locker are turned off.
+
+Now enter BIOS, turn USB boot on and put it on top of the boot priority.
+Disable secure boot. Clear all secure boot keys. Save changes and exit.
 
 When the installation medium's boot loader menu appears,
 select Arch Linux install medium and press `Enter` to enter installation environment.
