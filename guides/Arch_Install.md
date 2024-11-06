@@ -207,7 +207,8 @@ Install necessary packages as usual:
 ```bash
 sudo pacman -Syu
 sudo pacman -S xorg sddm plasma-meta plasma-workspace dolphin konsole kwrite firefox clang cmake
-    make gcc flatpak noto-fonts noto-fonts-cjk noto-fonts-emoji libreoffice-fresh
+    make gcc flatpak noto-fonts noto-fonts-cjk noto-fonts-emoji libreoffice-fresh xclip wl-clipboard
+    bottom
 ```
 
 After installation, we can start the GUI session.

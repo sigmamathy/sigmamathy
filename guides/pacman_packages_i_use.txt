@@ -1,0 +1,15 @@
+base base-devel linux linux-firmware git sudo neofetch htop nano vim bluez bluez-utils networkmanager sof-firmware
+
+intel-ucode			# intel cpu
+amd-ucode			# amd cpu
+
+vulkan-intel							# intel gpu
+nvidia nvidia-utils nvidia-settings 	# nvidia gpu 
+
+xorg sddm plasma-meta plasma-workspace dolphin konsole kwrite firefox clang cmake make gcc flatpak neovim xclip wl-clipboard ranger bottom gwenview mpg123 mpv glfw zip unzip tar discord obs-studio shotcut npm cowsay man-pages openssh kcolorchooser yt-dlp btop vulkan-tools vulkan-validation-layers
+
+grub efibootmgr dosfstools mtools os-prober
+
+noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd ttf-ms-win11-auto
+
+fortune-mod-off
